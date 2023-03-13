@@ -8,6 +8,16 @@
     tools:context=".screens.details.DetailsFragment"
     android:background="@color/black">
 
+    <ImageButton
+        android:id="@+id/btn_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/details_btn"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="0dp"
@@ -32,20 +42,20 @@
             <ImageView
                 android:id="@+id/img_detail"
                 android:layout_width="match_parent"
-                android:layout_height="352dp"
+                android:layout_height="363dp"
                 android:layout_margin="8dp"
                 android:background="@drawable/radius_img_20dp"
                 android:src="@drawable/ic_launcher_background" />
 
             <TextView
-                android:id="@+id/title_details"
+                android:id="@+id/text_title_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="6dp"
                 android:gravity="center"
                 android:text="Title"
                 android:textColor="@color/background_front"
-                android:textSize="29dp" />
+                android:textSize="26dp" />
 
 
         </LinearLayout>
@@ -74,7 +84,7 @@
             app:cardCornerRadius="20dp">
 
             <TextView
-                android:id="@+id/date_details"
+                android:id="@+id/text_date_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="31.10.2003"
@@ -108,10 +118,10 @@
             android:layout_margin="8dp">
 
             <TextView
-                android:id="@+id/more_details"
+                android:id="@+id/text_more_details"
                 android:textColor="@color/background_back"
                 android:textSize="20dp"
-                android:text="More"
+                android:text="Description"
                 android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
